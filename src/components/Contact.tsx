@@ -2,9 +2,9 @@ import { Button } from "@/components/ui/button";
 import { Mail, Phone, MapPin, MessageCircle } from "lucide-react";
 
 const Contact = () => {
-  const whatsappNumber = "919876543210"; // Replace with actual number
+  const whatsappNumber = "919248015067"; // Replace with actual number
   const email = "info@vibhainnovation.com"; // Replace with actual email
-  const phone = "+91 98765 43210"; // Replace with actual phone
+  const phone = "+91 92480 15067"; // Replace with actual phone
   
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent("Hi! I'm interested in your gifting services.")}`;
 
@@ -57,12 +57,21 @@ const Contact = () => {
                 <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-secondary/30 flex-shrink-0">
                   <MapPin className="w-6 h-6 text-primary" />
                 </div>
-                <div>
+                <div className="flex-1">
                   <h3 className="font-playfair text-lg font-semibold mb-2">Visit Us</h3>
-                  <p className="font-inter text-muted-foreground">
-                    123 Gift Street, Innovation Plaza<br />
-                    Mumbai, Maharashtra 400001
+                  <p className="font-inter text-muted-foreground mb-3">
+                    Beside Croma 13, 17, Srinagar Colony<br />
+                    Kamala Nagar, Dilsukhnagar<br />
+                    Hyderabad, Telangana 500006
                   </p>
+                  <Button 
+                    variant="outline"
+                    size="sm"
+                    className="font-inter text-sm"
+                    onClick={() => window.open('https://maps.app.goo.gl/SvysdmpDdQP7uwNX9', '_blank')}
+                  >
+                    View on Google Maps
+                  </Button>
                 </div>
               </div>
             </div>
@@ -104,7 +113,7 @@ const Contact = () => {
         <div className="mt-16">
           <div className="bg-card rounded-2xl p-4 shadow-[var(--shadow-soft)] overflow-hidden">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241317.14571178107!2d72.71637363282244!3d19.08219783961835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c6306644edc1%3A0x5da4ed8f8d648c69!2sMumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1635000000000!5m2!1sen!2sin"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.909438898434!2d78.52607607489402!3d17.368090203361238!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb98c416398d43%3A0x571f7081400c77e8!2sLet&#39;s%20Gift%20It!5e0!3m2!1sen!2sin!4v1759699478973!5m2!1sen!2sin"
               width="100%"
               height="400"
               style={{ border: 0 }}
@@ -112,7 +121,7 @@ const Contact = () => {
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
               className="rounded-xl"
-              title="Vibha Innovation Location"
+              title="Let's Gift It - Vibha Innovation Location"
             />
           </div>
         </div>
