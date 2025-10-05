@@ -4,8 +4,8 @@ import path from "path";
 import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
-export default defineConfig(({ mode }) => ({
-  base: process.env.NODE_ENV === 'production' ? '/vibha-gift-studio/' : '/',
+export default defineConfig(({ mode, command }) => ({
+  base: command === 'build' ? '/vibha-gift-studio/' : '/',
   server: {
     host: "::",
     port: 8080,
