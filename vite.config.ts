@@ -5,13 +5,13 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode, command }) => {
-  const base = command === 'build' ? '/vibha-gift-studio/' : '/';
+  const base = command === 'build' ? '/' : '/';
   
   return {
     base,
     server: {
       host: "::",
-      port: 8080,
+      port: 3000,
     },
     plugins: [react(), mode === "development" && componentTagger()].filter(Boolean),
     resolve: {
