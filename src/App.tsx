@@ -10,7 +10,7 @@ const queryClient = new QueryClient();
 
 const App = () => {
   // Set basename for GitHub Pages deployment
-  const basename = process.env.NODE_ENV === 'production' ? '/vibha-gift-studio' : '';
+  const basename = process.env.NODE_ENV === 'production' ? '/' : '';
   
   return (
     <QueryClientProvider client={queryClient}>
